@@ -2,27 +2,18 @@ package ru.junmidsen.pets;
 
 public class HW {
     public static void main(String args[]) {
+       /* Задание 3
+        Дан некоторый массив, суть задания инвертировать его. */
 
-    /*Задание 2
-Суть задания найти сумму всех четных чисел в последовательности Фибоначи, до
-определенного индекса "n".
-Например:
-    Последовательность: 0, 1, 1, 2, 3, 5, 8, 13, 21
-    n = 7
-    Сумма всех четных до 7го.  равна 2 + 8 = 10. */
+        int [] array = {5, 6, 7, 8, 9};
+        int[] array2 = new int[array.length];
 
-        int a = 0;
-        int b = 1;
-        int n = 7;
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            int c = a + b;
-            if (c % 2 == 0) {
-                sum += c;
-            }
-                a = b;
-                b = c;
+        for (int i = 0; i < array.length; i++) {
+            array2[(array.length - 1) - i] = array[i];
+            int inv = array[i];}
+
+            for (int i = 0; i < array2.length; i++) {
+                System.out.print(array2[i] + ", ");
         }
-        System.out.println("Sum = " + sum);
     }
 }
